@@ -9,6 +9,7 @@ Este proyecto es un tour virtual interactivo que permite a los usuarios explorar
 - Navegación Fluida: Menú de navegación claro para cambiar entre las diferentes plantas y volver a la información principal.
 - Responsive Design: La página está optimizada para funcionar en cualquier dispositivo.
 - GitHub Pages: El proyecto está disponible en línea para su visualización.
+  
 🚀 Cómo Ejecutar el Proyecto Localmente
 1. Clonar el repositorio:
 git clone https://github.com/Mithryll/tour-virtual.git
