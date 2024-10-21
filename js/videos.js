@@ -13,11 +13,14 @@ puntos.forEach((punto) => {
 
 function reproducirVideo(src, punto) {
     // Cambia el color del punto activo de forma permanente
-    punto.classList.add('played'); // Añadimos la clase 'played'
+    punto.classList.add('played');
 
-    // Mostrar y reproducir el video con transición
+    // Mostrar el contenedor del video antes de reproducir
+    videoContainer.style.visibility = 'visible';
+    videoContainer.style.opacity = '1';
+
+    // Configurar y reproducir el video
     videoPlayer.src = src;
-    videoContainer.classList.add('show');
     videoPlayer.play();
 
     // Forzar pantalla completa
@@ -39,12 +42,13 @@ closeButton.addEventListener('click', cerrarVideo);
 function cerrarVideo() {
     // Pausar el video y limpiar la fuente
     videoPlayer.pause();
-    videoPlayer.src = '';
+    videoPlayer.removeAttribute('src'); // Limpiar la fuente correctamente
+    videoPlayer.load(); // Recargar para detener el video completamente
 
-    // Iniciar la transición de ocultar el contenedor
-    videoContainer.classList.remove('show');
+    // Ocultar el contenedor del video con una transición suave
+    videoContainer.style.opacity = '0';
 
-    // Esperar a que la transición termine antes de ocultar completamente
+    // Esperar la duración de la transición antes de ocultarlo completamente
     setTimeout(() => {
         videoContainer.style.visibility = 'hidden';
     }, 500); // El tiempo debe coincidir con la duración de la transición en CSS
