@@ -42,6 +42,7 @@ cd tour-virtual
 ├── videos1.html            # Planta Superior
 ├── videos2.html            # Planta Inferior
 └── README.md               # Descripción del proyecto (este archivo)
+
 🎨 Tecnologías Utilizadas
 - HTML5: Estructura de las páginas web.
 - CSS3: Estilos y diseño del sitio.
@@ -62,10 +63,16 @@ cd tour-virtual
 - Añadir más puntos interactivos con imágenes y videos.
 - Implementar un sistema de comentarios para cada sección del tour.
 - Optimizar la carga de los videos para conexiones más lentas.
+
 👥 Contribuidores
+
 - Mithryll - Desarrollador del proyecto
+  
 📄 Licencia
 - Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+  
 
 📬 Contacto
+
 - Si tienes alguna duda o sugerencia, no dudes en contactarme a través de mi perfil de GitHub.
+  
