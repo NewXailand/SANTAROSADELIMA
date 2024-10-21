@@ -15,7 +15,9 @@ git clone https://github.com/Mithryll/tour-virtual.git
 2. Navegar al directorio del proyecto:
 cd tour-virtual
 3. Abrir el archivo index.html en un navegador web.
+
 📋 Estructura del Proyecto
+
 📁 tour-virtual
 │
 ├── 📁 css
