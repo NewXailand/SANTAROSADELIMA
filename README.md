@@ -18,30 +18,8 @@ cd tour-virtual
 
 📋 Estructura del Proyecto
 
-📁 tour-virtual
-│
-├── 📁 css
-│   ├── navbar.css          # Estilos del menú de navegación
-│   ├── styles.css          # Estilos globales del sitio
-│   ├── videos.css          # Estilos específicos de la página de videos
-│   └── offcanvas.css       # Estilos del menú offcanvas
-│
-├── 📁 images
-│   └── mapa.png            # Imagen del mapa del colegio
-│
-├── 📁 js
-│   ├── main.js             # Lógica principal del sitio
-│   └── videos.js           # Control de la reproducción de videos
-│
-├── 📁 videos               # Carpeta con los videos interactivos
-│   ├── video1.mp4
-│   ├── video2.mp4
-│   └── ...
-│
-├── index.html              # Página de inicio
-├── videos1.html            # Planta Superior
-├── videos2.html            # Planta Inferior
-└── README.md               # Descripción del proyecto (este archivo)
+![image](https://github.com/user-attachments/assets/384506a8-c9b2-46a1-9229-a9dbd7ad2a3b)
+
 
 🎨 Tecnologías Utilizadas
 - HTML5: Estructura de las páginas web.
