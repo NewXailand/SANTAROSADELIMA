@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planta Superior</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/videos.css">
+
+    <!-- Script JS -->
+    <script src="js/videos.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="videos1.html">Planta Superior</a></li>
+            <li><a href="videos2.html">Planta Inferior</a></li>
+        </ul>
+        <button class="btn-back" onclick="location.href='index.html'">
+            <span class="material-icons">arrow_back</span> Volver a Información
+        </button>
+    </nav>
+
+    <!-- Contenedor del Mapa -->
+    <div class="map-container">
+        <img src="images/colegio1.png" alt="Mapa Planta Superior" class="mapa-fondo">
+
+        <!-- Puntos Interactivos -->
+        <span class="punto material-icons" style="top: 45%; left: 22%;" data-video="videos/PRE-JARDIN_1.mp4">bedroom_baby</span>
+        <span class="punto material-icons" style="top: 55%; left: 22%;" data-video="videos/JARDIN CORREGIDO 05.mp4">child_friendly</span>
+        <span class="punto material-icons" style="top: 65%; left: 39.5%;" data-video="videos/AREAS RECREATIVAS PREESCOLAR.mp4">sports_volleyball</span>
+        <span class="punto material-icons" style="top: 33%; left: 37%;" data-video="videos/TRANSICION.mp4">child_care</span>
+        <span class="punto material-icons" style="top: 50%; left: 52%;" data-video="videos/SECRETARIA.mp4">support_agent</span>
+        <span class="punto material-icons" style="top: 52%; left: 66.5%;" data-video="videos/CANCHAS ARRIBA.mp4">sports_basketball</span>
+        <span class="punto material-icons" style="top: 20%; left: 63%;" data-video="videos/AULAS ARRIBA.mp4">auto_stories</span>
+        <span class="punto material-icons" style="top: 55%; left: 82.5%;" data-video="videos/SISTEMAS.mp4">computer</span>
+        <span class="punto material-icons" style="top: 80%; left: 86.5%;" data-video="videos/CAFETERIA CORREGIDO 03.mp4">restaurant</span>
+        <span class="punto material-icons" style="top: 76%; left: 93%;" data-video="videos/LABORATORIO CORREGIDO 03.mp4">science</span>
+    </div>
+
+    <!-- Contenedor del Video -->
+    <div id="videoContainer" class="video-container" hidden>
+        <video id="videoPlayer" playsinline controls></video>
+        <button id="closeVideo" class="btn-icon">
+            <span class="material-icons">close</span>
+        </button>
+    </div>
+
+</body>
+</html>

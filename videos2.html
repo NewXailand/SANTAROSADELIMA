@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planta Inferior</title>
+
+    <link rel="icon" href="images/Logo-en-altas pequeño (1).png">    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Enlazar CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/videos.css">
+
+    <!-- Enlazar JavaScript -->
+    <script src="js/videos.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="videos1.html">Planta Superior</a></li>
+            <li><a href="videos2.html">Planta Inferior</a></li>
+        </ul>
+        <button class="btn-back" onclick="location.href='index.html'">
+            <span class="material-icons">arrow_back</span> Volver a Información
+        </button>
+    </nav>
+
+    <!-- Contenedor del Mapa -->
+    <div class="map-container">
+        <img src="images/colegio2.png" alt="Mapa Planta Inferior" class="mapa-fondo">
+
+        <!-- Puntos Interactivos -->
+        <span class="punto material-icons" style="top: 10%; left: 40%;" data-video="videos/AULAS CORREGIDO_1.mp4">history_edu</span>
+        <span class="punto material-icons" style="top: 80%; left: 20%;" data-video="videos/AREAS DEPORTIVAS PLANTA BAJA.mp4">sports_soccer</span>
+        <span class="punto material-icons" style="top: 65%; left: 70%;" data-video="videos/AUDITORIO CORREGIDO 01.mp4">interpreter_mode</span>
+    </div>
+
+    <!-- Contenedor del Video -->
+    <div id="videoContainer" class="video-container" hidden>
+        <video id="videoPlayer" playsinline controls></video>
+        <button id="closeVideo" class="btn-icon">
+            <span class="material-icons">close</span>
+        </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="icon" href="images/Logo-en-altas pequeño (1).png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/offcanvas.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#convenios">Convenios</a></li>
+            <li><a href="#ventajas">Ventajas</a></li>
+            <li><a href="#profesores">Profesores</a></li>
+        </ul>
+        <button id="openOffcanvas" class="btn-open">Tour Virtual</button>
+    </nav>
+
+    <!-- Offcanvas -->
+    <div id="offcanvas" class="offcanvas">
+        <button class="close-offcanvas" id="closeOffcanvas">&times;</button>
+        <div class="offcanvas-content">
+            <img src="images/tour-image.jpg" alt="Imagen del Tour Virtual" class="tour-image">
+            <button id="tourButton" class="btn-tour">Ir al Tour Virtual</button>
+        </div>
+    </div>
+
+    <!-- Secciones de la página -->
+    <section id="convenios">
+        <h2>Convenios del Colegio</h2>
+        <p>Información sobre convenios...</p>
+    </section>
+
+    <section id="ventajas">
+        <h2>Ventajas</h2>
+        <p>Descripción de las ventajas...</p>
+    </section>
+
+    <section id="profesores">
+        <h2>Profesores</h2>
+        <p>Listado de profesores...</p>
+    </section>
+
+    <!-- Video Introductorio -->
+    <video id="introVideo" class="hidden-video" playsinline>
+        <source src="videos/Entrada Corregida 02.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+
+</body>
+</html>
