@@ -49,16 +49,20 @@ cd tour-virtual
 - JavaScript: Funcionalidad de los puntos interactivos y reproducción de videos.
 - GitHub Pages: Hospedaje del sitio web.
 - Git LFS: Almacenamiento de videos grandes.
+  
 📖 Uso del Sitio
+
 - Página de Inicio: Contiene la información principal del colegio, como convenios y ventajas.
 - Navegación por el Colegio:
 + Planta Superior: Vista de la planta superior del colegio con puntos clicables.
 + Planta Inferior: Vista de la planta inferior del colegio con más puntos interactivos.
 + Reproducción de Videos: Cada punto reproduce un video informativo en pantalla completa.
 + Menú Offcanvas: Acceso rápido al tour virtual desde cualquier sección.
+  
 🛠️ Problemas Conocidos y Soluciones
 - Límite de tamaño en GitHub: Algunos videos se almacenan utilizando Git LFS debido a las restricciones de tamaño.
 - Reproducción Automática: Los videos comienzan en pantalla completa, pero es posible que en algunos navegadores el botón de Esc interrumpa la reproducción.
+  
 🌟 Próximas Mejoras
 - Añadir más puntos interactivos con imágenes y videos.
 - Implementar un sistema de comentarios para cada sección del tour.
