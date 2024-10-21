@@ -1,48 +1,73 @@
-/* Offcanvas deslizable desde la izquierda */
+/* Fuente del documento */
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Offcanvas */
 .offcanvas {
     position: fixed;
     top: 0;
-    left: -100%; /* Oculto inicialmente */
+    left: -100%;
     width: 300px;
-    height: 100vh;
+    height: 100%;
     background-color: white;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease;
-    z-index: 10;
+    z-index: 2000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
-/* Offcanvas abierto */
 .offcanvas.open {
     left: 0;
 }
 
-/* Contenido del offcanvas */
 .offcanvas-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    gap: 15px;
     text-align: center;
 }
 
-.tour-image {
+.tour-image,
+.extra-image {
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
+/* Botón estilo degradado */
 .btn-tour {
-    padding: 10px 20px;
-    background-color: #007bff;
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
     color: white;
     border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: transform 0.3s, background-color 0.3s;
+    text-transform: uppercase;
 }
 
 .btn-tour:hover {
-    background-color: #0056b3;
+    transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
+    background: linear-gradient(45deg, #ff6a2a, #ff638c);
 }
 
-/* Botón para cerrar el offcanvas */
+.offcanvas-text {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Botón cerrar */
 .close-offcanvas {
     position: absolute;
     top: 10px;
@@ -52,6 +77,7 @@
     font-size: 24px;
     cursor: pointer;
 }
+
 
 /* Video modal con aspecto preservado */
 .hidden-video {
