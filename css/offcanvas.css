@@ -41,7 +41,7 @@ body {
 
 /* Botón estilo degradado */
 .btn-tour {
-    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    background-color: #AB3049;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -58,7 +58,7 @@ body {
 
 .btn-tour:hover {
     transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
-    background: linear-gradient(45deg, #ff6a2a, #ff638c);
+    background-color: #AB3049;
 }
 
 .offcanvas-text {

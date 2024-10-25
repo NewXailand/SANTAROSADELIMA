@@ -13,26 +13,60 @@
     <link rel="stylesheet" href="css/offcanvas.css">
 
     <script src="js/main.js" defer></script>
+    
+    <style>
+        /* Añadir centrado y justificación de texto */
+        section p {
+            text-align: justify;
+            margin: 0 auto;
+            width: 90%; /* Ajustar el ancho del texto */
+        }
+
+        /* Aumentar el espacio entre los divs y el footer */
+        footer {
+            margin-top: 50px; /* Espacio mayor entre el footer y el div anterior */
+        }
+
+        #profesores {
+            margin-bottom: 20px; /* Espacio extra antes del footer */
+        }
+
+        /* Footer styling */
+        footer div img {
+            margin: 0 10px; /* Adds space between the images */
+            max-height: 50px; /* Ensure all images have the same height */
+            vertical-align: middle; /* Aligns images vertically */
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body>
+<body style="background: linear-gradient(to bottom right, #1b4d89 28%, #ffffff 45%,#ffffff 60%, #a32020 80%); margin: 10; padding: 100; height: 100%; display: flex; flex-direction: column; overflow-y: auto;">
 
     <!-- Navbar -->
     <nav class="navbar">
         <ul>
-            <li><a href="#convenios">Convenios</a></li>
-            <li><a href="#ventajas">Ventajas</a></li>
+            <li><a href="#ventajas">Acerca de Nosotros</a></li>
             <li><a href="#profesores">Profesores</a></li>
         </ul>
         <button id="openOffcanvas" class="btn-open">Tour Virtual</button>
     </nav>
 
     <!-- Offcanvas -->
-    <div id="offcanvas" class="offcanvas">
+    <div id="offcanvas" class="offcanvas" style="background-image: url('C:/Users/vasqu/source/repos/tour-virtual/images/colegio2.png'); background-size: cover; background-position: center; box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; height: 100vh;">
         <button class="close-offcanvas" id="closeOffcanvas">&times;</button>
-        <div class="offcanvas-content">
-            <img src="images/tour-image.jpg" alt="Imagen del Tour Virtual" class="tour-image">
-            <img src="images/extra-image.jpg" alt="Imagen Adicional" class="extra-image">
-            <p class="offcanvas-text">Explora cada rincón del colegio en nuestro tour virtual interactivo.</p>
+        <div class="offcanvas-content" style="text-align: center;">
+            <img src="C:/Users/vasqu/source/repos/tour-virtual/images/Logo-en-altas pequeño (1).png" alt="Imagen del Tour Virtual" class="tour-image">
+            <div style="background-color: #1A2B4C; border-radius: 30px; padding: 20px; margin: 20px 0;">
+                <p class="offcanvas-text" style="color: white;">Explora cada rincón del colegio en nuestro tour virtual interactivo.</p>
+            </div>
             <button id="tourButton" class="btn-tour">
                 <span class="material-icons">play_circle</span> Ir al Tour Virtual
             </button>
@@ -40,20 +74,17 @@
     </div>
 
     <!-- Secciones de la página -->
-    <section id="convenios">
-        <h2>Convenios del Colegio</h2>
-        <p>Información sobre convenios...</p>
-    </section>
+    <div style="max-width: 1000px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 auto;">
+        <section id="ventajas" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <h2 style="text-align: center; line-height: 1.5; margin-bottom: 20px; color: #1A2B4C; font-size: 32px;">¿Por qué dejar el futuro de tus hijos en nuestras manos?</h2>
+            <p style="line-height: 1.8; margin-bottom: 30px; color: #333333; font-size: 25px;">Una de las razones por las que muchos eligen estudiar en el Santa Rosa de Lima es por los increíbles convenios que ofrece. Tienen alianzas con instituciones como la Universidad de Ibagué, la UNAD, Santillana, el SENA y Milton Ochoa, lo que realmente abre muchas puertas a los estudiantes. Además, se involucran en proyectos prácticos, como robótica, que hacen que el aprendizaje sea dinámico y emocionante. En el Santa Rosa, no solo se enfocan en las materias, sino que también se fomentan valores como la autonomía y el trabajo en equipo, enriqueciendo así la experiencia educativa de cada alumno.</p>
+        </section>
 
-    <section id="ventajas">
-        <h2>Ventajas</h2>
-        <p>Descripción de las ventajas...</p>
-    </section>
-
-    <section id="profesores">
-        <h2>Profesores</h2>
-        <p>Listado de profesores...</p>
-    </section>
+        <section id="profesores" style="background-color: #f7f9fc; padding: 40px; border-radius: 10px; box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1); border: 3px solid #e0e0e0; margin-top: 50px; width: 100%;">
+            <h2 style="text-align: center; line-height: 1.5; margin-bottom: 20px; color: #1A2B4C; font-size: 32px;">Profesores</h2>
+            <p style="line-height: 1.8; margin-bottom: 30px; color: #333333; font-size: 25px; margin-bottom: 25px;">En el Instituto Técnico Santa Rosa de Lima, los docentes desempeñan un papel fundamental en la formación integral de los estudiantes. Su dedicación diaria va más allá de la enseñanza de contenidos académicos, ya que fomentan valores, habilidades técnicas y personales que preparan a los jóvenes para enfrentar los retos del mundo moderno. Con compromiso y paciencia, los docentes adaptan sus métodos a las necesidades de cada estudiante, promoviendo un ambiente de aprendizaje inclusivo y motivador. Su esfuerzo constante es clave para el crecimiento tanto académico como humano de quienes asisten al instituto, convirtiendo su labor en una piedra angular del desarrollo educativo y social.</p>
+        </section>
+    </div>
 
     <!-- Video Introductorio -->
     <video id="introVideo" class="hidden-video" playsinline>
@@ -61,5 +92,22 @@
         Tu navegador no soporta la reproducción de videos.
     </video>
 
+    <!-- Pie de página -->
+    <footer style="background-color: #1A2B4C; color: white; padding: 5px; text-align: center; position: relative; width: 100%; margin-top: 50px;">
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <p style="margin-right: 20px;">
+                <a href="mailto:contacto@tuempresa.com" style="color: white; text-decoration: none;">Contáctanos</a> |
+                <a href="https://www.tuempresa.com/privacidad" style="color: white; text-decoration: none;">Política de Privacidad</a>
+            </p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <img src="images/LOGO LINGUASKILL.png" alt="LINGUASKILL">
+                <img src="images/LOGO SENA.jpeg" alt="SENA">
+                <img src="images/SANTILLANA.png" alt="SANTILLANA">
+                <img src="images/LOGO MILTON OCHOA.jpeg" alt="MILTON OCHOA">
+                <img src="images/UIBAGUE.png" alt="Universidad de Ibagué">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+
