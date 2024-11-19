@@ -15,6 +15,42 @@
 
     <!-- Enlazar JavaScript -->
     <script src="js/videos.js" defer></script>
+
+    <style>
+        /* Estilo para el cuerpo y contenedor principal */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Asegura que la página ocupe toda la altura */
+            overflow-y: scroll; /* Fuerza que siempre aparezca la barra de desplazamiento vertical */
+        }
+
+        /* Estilo para el contenido */
+        .content {
+            height: 2000px; /* Altura grande para crear contenido que necesite desplazamiento */
+            padding: 20px;
+        }
+
+        /* Personalización de la barra de desplazamiento en la página */
+        /* Solo se aplica a los navegadores que soportan estas propiedades */
+        ::-webkit-scrollbar {
+            width: 12px; /* Ancho de la barra */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Color del fondo de la pista */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888; /* Color del pulgar (la parte que se mueve) */
+            border-radius: 6px; /* Bordes redondeados del pulgar */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Color cuando el pulgar está siendo tocado */
+        }
+    </style>
 </head>
 <body>
 
