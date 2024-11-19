@@ -50,6 +50,7 @@ cd tour-virtual
 👥 Contribuidores
 
 - Mithryll - Desarrollador del proyecto
+- NewXailand - Desarrollador del proyecto
   
 📄 Licencia
 - Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
